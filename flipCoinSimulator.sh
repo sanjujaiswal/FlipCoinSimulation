@@ -40,6 +40,9 @@ function percentage(){
 	flip=$2;
 	percentage[$side]=$((${coinArray[$side]}*100/$flip));
 }
+
 read -p "Enter flips : " flips
+
 singletMax=$( coinFlip $flips $SINGLE_COIN )
 doubletMax=$( coinFlip $flips $DOUBLE_COIN )
+tripletMax=$( coinFlip $flips $TRIPLE_COIN )
