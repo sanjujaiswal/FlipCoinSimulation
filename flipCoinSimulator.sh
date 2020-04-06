@@ -13,7 +13,6 @@ TRIPLE_COIN=3;
 
 #Variable declaration
 coinSide=0;
-largest=0;
 
 function coinFlip(){
 for (( numOfFlip=1;numOfFlip<=$1;numOfFlip++ ))
@@ -43,3 +42,4 @@ function percentage(){
 }
 read -p "Enter flips : " flips
 singletMax=$( coinFlip $flips $SINGLE_COIN )
+doubletMax=$( coinFlip $flips $DOUBLE_COIN )
